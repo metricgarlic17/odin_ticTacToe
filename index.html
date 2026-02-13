@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #board {
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        gap: 8px;
+        margin-top: 12px;
+      }
+
+      .square {
+        width: 100px;
+        height: 100px;
+        font-size: 40px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <input id="p1" type="text" placeholder="Player 1 name" />
+      <input id="p2" type="text" placeholder="Player 2 name" />
+      <button id="start">Start / Restart</button>
+
+      <p id="status">Enter names and start.</p>
+
+      <div id="board"></div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
